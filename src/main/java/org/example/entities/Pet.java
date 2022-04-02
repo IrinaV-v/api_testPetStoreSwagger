@@ -2,6 +2,7 @@ package org.example.entities;
 
 public class Pet {
 
+
     public static String getPet(){
         return "{\n" +
                 "  \"id\": 101,\n" +
