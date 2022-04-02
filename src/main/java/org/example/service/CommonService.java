@@ -40,6 +40,11 @@ public abstract class CommonService {
                 .when().post(prepareUri.apply(uri));
     }
 
+    protected Response postRequestUpdate(String uri,String body) {
+        return requestSpecification.body(body)
+                .when().post(prepareUri.apply(uri));
+    }
+
     protected void deleteRequest(String uri) {
         requestSpecification.expect()
                 .when().delete(prepareUri.apply(uri));

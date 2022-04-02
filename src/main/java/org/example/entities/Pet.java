@@ -1,26 +1,14 @@
 package org.example.entities;
 
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+@Data
+@Accessors(chain = true)
 public class Pet {
-
-
-    public static String getPet(){
-        return "{\n" +
-                "  \"id\": 101,\n" +
-                "  \"category\": {\n" +
-                "    \"id\": 101,\n" +
-                "    \"name\": \"string\"\n" +
-                "  },\n" +
-                "  \"name\": \"Sarancha\",\n" +
-                "  \"photoUrls\": [\n" +
-                "    \"string\"\n" +
-                "  ],\n" +
-                "  \"tags\": [\n" +
-                "    {\n" +
-                "      \"id\": 101,\n" +
-                "      \"name\": \"string\"\n" +
-                "    }\n" +
-                "  ],\n" +
-                "  \"status\": \"available\"\n" +
-                "}";
-    }
+    private int id;
+    private String name;
+    private String[] photoUrls;
+    private String[] tags;
+    private String status;
 }
