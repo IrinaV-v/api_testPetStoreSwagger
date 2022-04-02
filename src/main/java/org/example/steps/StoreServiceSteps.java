@@ -2,11 +2,7 @@ package org.example.steps;
 
 import io.restassured.response.Response;
 import org.example.entities.Store;
-import org.example.entities.User;
 import org.example.service.StoreService;
-import org.example.service.UserService;
-
-import java.util.List;
 
 import static org.example.service.uritemplate.StoreServiceUri.STORE_ORDER;
 import static org.example.service.uritemplate.StoreServiceUri.STORE_ORDER_BY_ID;
